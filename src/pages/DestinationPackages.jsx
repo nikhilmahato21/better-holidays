@@ -86,7 +86,7 @@ function PackageCard({ pkg, index }) {
 
           {pkg.isDummy ? (
             <a
-              href="tel:9306689751"
+              href="tel:9971107330"
               className="bg-crimson hover:bg-crimson-dark text-white text-sm font-outfit font-semibold px-4 py-2 rounded-full transition-colors"
             >
               Enquire

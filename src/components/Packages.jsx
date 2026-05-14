@@ -98,7 +98,7 @@ function PackageCard({ pkg, index }) {
         {/* Actions */}
         <div className="flex gap-2">
           <a
-            href="tel:9306689751"
+            href="tel:9971107330"
             className="w-9 h-9 border border-gray-200 rounded-full flex items-center justify-center hover:border-gold hover:text-gold transition-colors text-gray-500 flex-shrink-0"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

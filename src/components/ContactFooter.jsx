@@ -9,6 +9,8 @@ export default function ContactFooter() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    const msg = `Hi, I have an enquiry.%0AName: ${form.name}%0APhone: ${form.phone}%0AEmail: ${form.email}%0ADestination: ${form.dest}%0AMessage: ${form.msg}`
+    window.open(`https://wa.me/919971107330?text=${msg}`, '_blank')
     setSent(true)
     setTimeout(() => setSent(false), 3000)
   }

@@ -301,7 +301,11 @@ export default function TourDetails() {
             <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-6 lg:p-8 sticky top-28 my-10">
               <h3 className="font-outfit font-bold text-navy text-2xl mb-6">Tour Booking</h3>
               <form
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={(e) => {
+                  e.preventDefault()
+                  const msg = `Hi, I'd like to book the *${tour.title}* tour.%0AName: ${booking.name}%0AEmail: ${booking.email}%0APhone: ${booking.phone}%0ADate: ${booking.date}%0ANote: ${booking.message}`
+                  window.open(`https://wa.me/919971107330?text=${msg}`, '_blank')
+                }}
                 className="space-y-4"
               >
                 <input
